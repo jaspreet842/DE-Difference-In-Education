@@ -1,0 +1,35 @@
+DOCTYPE html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        style
+            include ../css/login.css
+        title DIE
+    body
+        div.loginBox
+            img.avatar
+            h1 Login Form
+            if expressFlash.length > 0
+                div(class="alert alert-warning alert-dismissible fade show", role="alert") #{ expressFlash }
+                    button(type="button" class="close" data-dismiss="alert" aria-label="Close")
+                        span(aria-hidden="true") &times; 
+            if errorFlash.length > 0
+                div(class="alert alert-danger alert-dismissible fade show", role="alert") #{ errorFlash }
+                    button(type="button" class="close" data-dismiss="alert" aria-label="Close")
+                        span(aria-hidden="true") &times; 
+            form(class="myForm",action="/users/login",method="post")
+                input(type="email",name="email",placeholder="Enter Email Address",required)
+                input(type="password", name="password",placeholder="Enter Password",required)
+                input(type="radio",id="Student",name="type",value="Student",required)
+                label(for="Student") Student
+                input(type="radio",id="Teacher",name="type",value="Teacher",required)
+                label(for="Teacher") Teacher
+                input(type="submit",name="button",value="Login")
+                a(href="#") Lost your password
+                a(href="register") Don't have an account
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js", integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN", crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js",integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV", crossorigin="anonymous")

@@ -1,0 +1,54 @@
+body{
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.6) url('https://wallpaperset.com/w/full/7/e/3/180293.jpg') no-repeat center/cover; 
+    background-blend-mode: darken;
+}
+h1{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 3.5rem;
+    font-family:  cursive;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#myForm{
+    background: rgba(0, 0, 0, 0.9);
+}
+.form-group, .form-group div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa{
+    align-self: center;
+    font-size: 2rem;
+}
+.form-control{
+    background: none;
+    border: none;
+    font-family: cursive;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    margin-left: 0.5rem;
+    padding: 0;
+    border-bottom: 2px solid grey;
+    text-indent: 0.2em;
+}
+.form-control::placeholder{
+    color: white;
+    background: none;
+}
+label{
+    font-family: cursive;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 0; 
+}
+input[type="radio"]{
+    cursor: pointer;
+}
+.btn{
+    font-family: cursive;
+    font-size: larger;
+    text-transform: uppercase;
+}

@@ -61,6 +61,10 @@ router.get('/test4', (req, res) => res.render('test4.pug'));
 router.get('/test5', (req, res) => res.render('test5.pug'));
 router.get('/test6', (req, res) => res.render('test6.pug'));
 
+router.get('/officialTest', (req, res) => res.render('officialTest.pug'));
+
+router.get('/career', (req, res) => res.render('career.pug'));
+
 router.get('/contactUs', (req, res) => res.render('contactUs.pug'));
 
 module.exports = router;

@@ -3,7 +3,7 @@ html(lang="en")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		title Document
+		title Resources to Study
 		link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
 		script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
 		script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous")
@@ -11,6 +11,8 @@ html(lang="en")
 		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
 		style
 			include ../css/resource.css
+		style
+			include ../css/footer.css
 	body
 		// navbar
 		nav.navbar.navbar-expand-lg.navbar-light.bg-light
@@ -30,6 +32,10 @@ html(lang="en")
 					li.nav-item.active
 						a.nav-link(href='/profile/practice')
 							| Practice
+							span.sr-only
+					li.nav-item.active
+						a.nav-link(href='/profile/career')
+							| Career
 							span.sr-only
 					li.nav-item
 						a.nav-link(href='/users/logout') Log Out
@@ -172,5 +178,57 @@ html(lang="en")
 								div
 									a.btn.btnfilter.my-2.btn-outline-primary(href="#") AngularJs
 									a.btn.btnfilter.my-2.btn-outline-primary(href="#") NCERT
-		script
-			include ../js/resources.js
+
+		footer
+			.main-content
+				.left.box
+					h2 About us
+					.content
+						p
+							| In the time of pandemic, when the students are in danger of not having sufficient learning content. We team noobs have come up to provide students enough content on a single website and test session to ensure that they don't need to go anywhere.
+						.social
+							a(href="#")
+								span.fab.fa-facebook-f
+							a(href="#")
+								span.fab.fa-twitter
+							a(href="#")
+								span.fab.fa-instagram
+							a(href="#")
+								span.fab.fa-youtube
+				.center.box
+					h2 Address
+					.content
+						.place
+							span.fas.fa-map-marker-alt
+							span.text Mariam Nagar,Ghaziabad
+						.phone
+							span.fas.fa-phone-alt
+							span.text +089-7893567742
+						.email
+							span.fas.fa-envelope
+							span.text abc@example.com
+				.right.box
+					h2 Quick Links
+					.content
+						ul
+							li
+								a(href="#") Home
+							li
+								a(href="#") Discover
+							li
+								a(href="#") Resource
+							li
+								a(href="#") Practise
+							li
+								a(href="#") Contest
+			.bottom
+				center
+					span.credit
+						| Created By
+						a(href="#") Team Noobs
+						|  |
+					span.far.fa-copyright
+					span 2020 All rights reserved.
+	script
+		include ../js/resources.js
+	script(src='https://kit.fontawesome.com/a076d05399.js')

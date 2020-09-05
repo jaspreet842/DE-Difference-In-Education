@@ -3,11 +3,13 @@ html
     head
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1.0')
-        title Teacher Profile
-        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
-        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css",integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z", crossorigin="anonymous")
+        title Profile Page
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
         style 
-            include ../css/teacherProfile.css
+            include ../css/teacherProfile.css        
+        style
+            include ../css/footer.css
     body
         nav.navbar.navbar-expand-lg.navbar-light.bg-light
             a.navbar-brand(href='#') #{user}
@@ -34,9 +36,9 @@ html
                     li.nav-item
                         a.nav-link(href='/users/logout') Log Out
                 span.nav-item
-                    a(href='/profile/contactUs', style="text-decoration: none;") Contact Us
+                    a(href='/profile/contactUs' style="text-decoration: none;") Contact Us
         if expressMessage.length > 0
-            div(class="alert alert-warning alert-dismissible fade show", role="alert") #{ expressMessage }
+            div(class="alert alert-warning alert-dismissible fade show" role="alert") #{ expressMessage }
                 button(type="button" class="close" data-dismiss="alert" aria-label="Close")
                     span(aria-hidden="true") &times; 
         .container2
@@ -94,7 +96,57 @@ html
                                 li
                                     a(href='https://linkedin.com' target='_blank')
                                         i.fab.fa-linkedin
+        footer
+            .main-content
+                .left.box
+                    h2 About us
+                    .content
+                        p
+                            | In the time of pandemic, when the students are in danger of not having sufficient learning content. We team noobs have come up to provide students enough content on a single website and test session to ensure that they don't need to go anywhere.
+                        .social
+                            a(href="#")
+                                span.fab.fa-facebook-f
+                            a(href="#")
+                                span.fab.fa-twitter
+                            a(href="#")
+                                span.fab.fa-instagram
+                            a(href="#")
+                                span.fab.fa-youtube
+                .center.box
+                    h2 Address
+                    .content
+                        .place
+                            span.fas.fa-map-marker-alt
+                            span.text Mariam Nagar,Ghaziabad
+                        .phone
+                            span.fas.fa-phone-alt
+                            span.text +089-7893567742
+                        .email
+                            span.fas.fa-envelope
+                            span.text abc@example.com
+                .right.box
+                    h2 Quick Links
+                    .content
+                        ul
+                            li
+                                a(href="#") Home
+                            li
+                                a(href="#") Discover
+                            li
+                                a(href="#") Resource
+                            li
+                                a(href="#") Practise
+                            li
+                                a(href="#") Contest
+            .bottom
+                center
+                    span.credit
+                        | Created By
+                        a(href="#") Team Noobs
+                        |  |
+                    span.far.fa-copyright
+                    span 2020 All rights reserved.
     script(src='https://kit.fontawesome.com/b99e675b6e.js')
-    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin="anonymous")
-    script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js", integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN", crossorigin="anonymous")
-    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js",integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV", crossorigin="anonymous")
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous")

@@ -1,0 +1,84 @@
+doctype html
+html
+    head
+        title Test
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        style
+            include ../css/officialTest.css
+        style
+            include ../css/footer.css
+    body.no-sidebar.is-preload
+        #page-wrapper
+            //- Header
+            #header-wrapper
+                #header.container
+                    //- Logo
+                    h1#logo
+                        a(href="#") Test
+            //- Main
+            .wrapper
+                #main.container
+                    //- Content
+                    article#content
+                        header
+                            h2 Sample Test
+                            p This is a sample of what out Test site will look like.
+                        a.image.featured(href="#")
+                            img(src="images/pic06.jpg" alt="")
+                        h2#test_status
+                        #test
+                        .row.features
+        footer
+            .main-content
+                .left.box
+                    h2 About us
+                    .content
+                        p
+                            | In the time of pandemic, when the students are in danger of not having sufficient learning content. We team noobs have come up to provide students enough content on a single website and test session to ensure that they don't need to go anywhere.
+                        .social
+                            a(href="#" style="border-bottom: none;")
+                                span.fab.fa-facebook-f
+                            a(href="#" style="border-bottom: none;")
+                                span.fab.fa-twitter
+                            a(href="#" style="border-bottom: none;")
+                                span.fab.fa-instagram
+                            a(href="#" style="border-bottom: none;")
+                                span.fab.fa-youtube
+                .center.box
+                    h2 Address
+                    .content
+                        .place
+                            span.fas.fa-map-marker-alt
+                            span.text Mariam Nagar,Ghaziabad
+                        .phone
+                            span.fas.fa-phone-alt
+                            span.text +089-7893567742
+                        .email
+                            span.fas.fa-envelope
+                            span.text abc@example.com
+                .right.box
+                    h2 Quick Links
+                    .content
+                        ul
+                            li
+                                a(href="#" style="border-bottom: none;") Home
+                            li
+                                a(href="#" style="border-bottom: none;") Discover
+                            li
+                                a(href="#" style="border-bottom: none;") Resource
+                            li
+                                a(href="#" style="border-bottom: none;") Practise
+                            li
+                                a(href="#" style="border-bottom: none;") Contest
+            .bottom
+                center
+                    span.credit
+                        | Created By
+                        a(href="#" style="border-bottom: none;") Team Noobs
+                        |  |
+                    span.far.fa-copyright
+                    span 2020 All rights reserved.
+    script
+        include ../js/officialTest.js
+    script(src='https://kit.fontawesome.com/a076d05399.js')

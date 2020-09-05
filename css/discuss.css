@@ -1,46 +1,50 @@
-#answer1{
-    display: none;
+#answer1 {
+  display: none;
 }
-#answers{
-    color:lightsalmon;
+
+#answers {
+  color: lightsalmon;
 }
-#answer1{
-    padding-top: 14px;
+
+#answer1 {
+  padding-top: 14px;
 }
-#answer1 .add{
-    padding: 6px 0px;
+
+#answer1 .add {
+  padding: 6px 0px;
 }
+
 #set_width {
-    width: 46rem;
-  }
+  width: 46rem;
+}
 
-  .questions {
-    margin: 20px 0px;
-  }
+.questions {
+  margin: 20px 0px;
+}
 
-  .vl {
-    display: flex;
-    border-left: 1px solid black;
-    position: sticky;
-  }
+.vl {
+  display: flex;
+  border-left: 1px solid black;
+  position: sticky;
+}
 
-  .btn {
-    margin: 0px 5px;
-  }
+.btn {
+  margin: 0px 5px;
+}
 
-  .questions_container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 12px;
-  }
+.questions_container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+}
 
-  .col-sm-5 {
-    display: flex;
-    /* float: left; */
-  }
+.col-sm-5 {
+  display: flex;
+  /* float: left; */
+}
 
-  .container1 {
-    display: flex;
-    /* justify-content: center; */
-    flex-direction: column;
-  }
+.container1 {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+}

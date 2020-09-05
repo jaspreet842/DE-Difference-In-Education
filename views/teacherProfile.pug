@@ -1,0 +1,98 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Teacher Profile
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css",integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z", crossorigin="anonymous")
+        style 
+            include ../css/teacherProfile.css
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='#') #{user}
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='/profile/organize')
+                            |  Organize
+                            span.sr-only (current)
+                    li.nav-item.active
+                        a.nav-link(href='/profile/discover')
+                            | Discover
+                            span.sr-only
+                    li.nav-item.active
+                        a.nav-link(href='/profile/resources')
+                            | Resources
+                            span.sr-only
+                    li.nav-item.active
+                        a.nav-link(href='/profile/editProfile')
+                            | Edit profile
+                            span.sr-only
+                    li.nav-item
+                        a.nav-link(href='/users/logout') Log Out
+        if expressMessage.length > 0
+            div(class="alert alert-warning alert-dismissible fade show", role="alert") #{ expressMessage }
+                button(type="button" class="close" data-dismiss="alert" aria-label="Close")
+                    span(aria-hidden="true") &times; 
+        .container2
+            .container1
+                .card.wrapper
+                    .left(class='.container1')
+                        img(src='https://he-s3.s3.amazonaws.com/static/base/images/gravatar.png' alt='' width='90%' height='60%')
+                        br 
+                        br
+                        h4 #{user}
+                        p #{skill}
+                        br
+                        p Department: Information Technology
+                    .right
+                        .info
+                            h3 INFORMATION
+                            .info_data
+                                .data
+                                    h4 Test Conducted
+                                    p 2134
+                                .data
+                                    h4 Rating
+                                    .rating
+                                        span &star;
+                                        span &star;
+                                        span &star;
+                                        span &star;
+                                        span &star;
+                        .projects
+                            h3 EDUCATION
+                            .projects_data
+                                .data
+                                    h4 Bachelor&apos;s
+                                    p MAIT,New Delhi.
+                                .data
+                                    h4 Master&apos;s
+                                    p #{college}
+                        .personal
+                            h3 PERSONAL DETAILS
+                            .personal_data
+                                .data
+                                    h4 Email
+                                    p #{email}
+                                .data
+                                    h4 Phone Number
+                                    p #{phone}
+                        .social_media.flex
+                            ul
+                                li
+                                    a(href='https://facebook.com' target='_blank')
+                                        i.fab.fa-facebook-square
+                                li
+                                    a(href='https://twitter.com' target='_blank')
+                                        i.fab.fa-twitter
+                                li
+                                    a(href='https://linkedin.com' target='_blank')
+                                        i.fab.fa-linkedin
+    script(src='https://kit.fontawesome.com/b99e675b6e.js')
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js", integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN", crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js",integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV", crossorigin="anonymous")

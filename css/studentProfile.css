@@ -1,0 +1,86 @@
+.container1 {
+    display: grid;
+    grid-template-areas: 'pic name name edit' 'pic edu edu edit' 'pic skill skill edit';
+    grid-template-columns: 0.7fr 1fr 0.7fr 0.7fr;
+    /* grid-template-rows: 1fr 3fr 2fr; */
+    /* grid-gap:1rem; */
+    margin: 0px 100px;
+}
+
+#pic {
+    /* border: 2px solid black; */
+    grid-area: pic;
+    grid-column: 1 /span 1;
+    grid-row: 1 /span 3;
+}
+
+#img {
+    object-fit: contain;
+    width: 190px;
+    height: 168px;
+    margin: 8px 0px;
+}
+
+#name {
+    grid-area: name;
+    /* border: 2px solid red; */
+}
+
+#name1 {
+    padding: 0px 15px;
+}
+
+#edu {
+    grid-area: edu;
+    /* border: 2px solid aqua; */
+    padding: 14px;
+}
+
+.text {
+    font-size: large;
+    padding: 8px;
+}
+
+#skill {
+    grid-area: skill;
+    /* border: 2px solid pink; */
+    padding: 13px;
+}
+
+#light {
+    font-size: 17px;
+    color: #9ca3a8;
+}
+
+#edit {
+    display: flex;
+    grid-area: edit;
+    /* border: 2px solid green; */
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.btn1 {
+    cursor: pointer;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+.btn1:hover {
+    color: red;
+}
+
+@media only screen and (max-width: 700px) {
+    .container1{
+        justify-content: center;
+        grid-template-areas: 'pic pic' 'pic pic ' 'pic pic' 'name name ' 'edu edu ' 'skill skill' 'edit edit';
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-columns: 0fr;
+        /* margin: 0px 0px; */
+    }
+    .card{
+        margin: 8px 0px;
+    }
+}

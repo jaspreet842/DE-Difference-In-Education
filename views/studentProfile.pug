@@ -1,0 +1,84 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Profile page
+        style
+            include ../css/studentProfile.css
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous')
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='#') #{user}
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='/profile/contest')
+                            | Contest
+                            span.sr-only (current)
+                    li.nav-item.active
+                        a.nav-link(href='/profile/discover')
+                            | Discover
+                            span.sr-only
+                    li.nav-item.active
+                        a.nav-link(href='/profile/resources')
+                            | Resources
+                            span.sr-only
+                    li.nav-item.active
+                        a.nav-link(href='/profile/practice')
+                            | Practice
+                            span.sr-only
+                    li.nav-item
+                        a.nav-link(href='/users/logout') Log Out
+        .container1.mt-4
+            #pic
+                .card(style='width: 12rem;')
+                    img#img(src='https://he-s3.s3.amazonaws.com/static/base/images/gravatar.png' alt='')
+            #name
+                h1#name1 #{user}
+            #edu
+                i.fas.fa-university
+                span.text Studying at #{college}
+            #skill
+                span#light Skills:
+                span.text #{skill}
+            #edit
+                a(href="/profile/editProfile").btn1 Edit profile
+        .container.mt-5
+            .col-sm-6.offset-sm-3
+                div
+                    div
+                        h1
+                            | Submissions 
+                            button.btn.btn-primary(onclick='updatechart()') Update
+                    div
+                        canvas#myChart
+        .container.mt-4
+            .row
+                .card.mx-auto.m-2(style='width: 18rem;')
+                    .card-body
+                        h5.card-title Current/Live Contests
+                        p.card-text
+                            | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                        a.btn.btn-outline-danger(href='#') See Contests
+                .card.mx-auto.m-2(style='width: 18rem;')
+                    .card-body
+                        h5.card-title Upcoming Contests
+                        p.card-text
+                            | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                        a.btn.btn-outline-success(href='#') See Contests
+                .card.mx-auto.m-2(style='width: 18rem;')
+                    .card-body
+                        h5.card-title Upcoming College Contests
+                        p.card-text
+                            | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                        a.btn.btn-outline-success(href='#') See Contests
+    script(src='https://cdn.jsdelivr.net/npm/chart.js@2.8.0')
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' integrity='sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV' crossorigin='anonymous')
+    script(src='https://kit.fontawesome.com/a076d05399.js')
+    script
+        include ../js/profile.js

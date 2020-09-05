@@ -17,10 +17,6 @@ const loginInfoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    file: {
-        data: Buffer, 
-        contentType: String
-    },
     phone: {
         type: String,
         required: true

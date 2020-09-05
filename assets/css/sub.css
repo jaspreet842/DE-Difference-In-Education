@@ -1,0 +1,371 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  section {
+    display: block;
+    text-align: center;
+    padding: 0 0 20px;
+  }
+  
+  section hr {
+    width: 50%;
+  }
+  
+  a, a:visited {
+    text-decoration: none;
+    color: #555;
+    outline: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #888;
+  }
+  
+  a:active, a:focus {
+    text-decoration: none;
+    color: #aaa;
+    outline: none;
+  }
+  
+  /* Flaired edges, by Tomas Theunissen */
+  hr.style-seven {
+      height: 30px;
+      border-style: solid;
+      border-color: #eee;
+      border-width: 1px 0 0 0;
+      border-radius: 20px;
+  }
+  hr.style-seven:before { /* Not really supposed to work, but does */
+      display: block;
+      content: "";
+      height: 30px;
+      margin-top: -31px;
+      border-style: solid;
+      border-color: #eee;
+      border-width: 0 0 1px 0;
+      border-radius: 20px;
+  }
+  
+  
+  .teall-bg {
+    color: #eee;
+    background-color: #333;
+  }
+  
+  /*-- Custom Buttons --*/
+  .btn:focus,.btn:active {	/* Prevent clue outline around boostrap buttons */
+     outline: none !important;
+  }
+  
+  .btn-clear-light, .btn-clear-light:visited {
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 0;
+  }
+  
+  .btn-clear-light:hover {
+    color: #333;
+    background: #eee;
+  }
+  
+  .btn-clear-light:active, .btn-clear-light:focus {
+    color: #333;
+    background-color: #ddd;
+  }
+  
+  .btn-clear-dark, .btn-clear-dark:visited {
+    color: #111;
+    background: none;
+    border: 1px solid #333;
+    border-radius: 0;
+  }
+  
+  .btn-clear-dark:hover {
+    color: #eee;
+    background: #111;
+  }
+  
+  .btn-clear-dark:active, .btn-clear-dark:focus {
+    color: #eee;
+    background-color: #333;
+  }
+  
+  .btn-clear-med, .btn-clear-dark:visited {
+    color: #aaa;
+    background: none;
+    border: 1px solid #aaa;
+    border-radius: 0;
+  }
+  
+  .btn-clear-med:hover {
+    color: #333;
+    border-color: #333;
+  }
+  
+  .btn-clear-med:active, .btn-clear-med:focus {
+    color: #aaa;
+    border-color: #aaa;
+  }
+  
+  .btn-fill-dark, .btn-fill-dark:visited {
+    color: #fff;
+    background-color: #222;
+    border: 1px solid #000;
+    border-radius: 0;
+  }
+  
+  .btn-fill-dark:hover {
+    color: #eee;
+    background-color: #101010;
+  }
+  
+  .btn-fill-dark:active, .btn-fill-dark:focus {
+    color: #fff;
+    background-color: #333;
+  }
+  
+  .btn-fill-red, .btn-fill-red:visited {
+    color: #fff !important;
+    background: none; /* Clear boostrap background */
+    background-color: #d33;
+    border: 1px solid #a33;
+    border-radius: 0;
+  }
+  
+  .btn-fill-red:hover {
+    background-color: #b33;
+  }
+  
+  .btn-fill-red:active, .btn-fill-red:focus {
+    background-color: #f33;
+  }
+  /*-- END Custom Buttons --*/
+  
+  .soft-transition {
+    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+  }
+  
+  .container {
+    max-width: 1024px;
+  }
+  
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*-- Navbar settings --*/
+  .navbar {
+    transition: all 0.5s ease-out;
+  }
+  
+  .navbar {
+    background: none;
+    border: none;
+  }
+  
+  .navbar-brand {
+    padding: 10px; /* Allows more space for brand logo to expand */
+  }
+  
+  .navbar-brand > img {
+    max-height: 100%;
+    display: inline-block;
+    margin-right: 2px;
+    background-color: #ccc;
+      box-shadow: 0 0 3px #ccc;
+  }
+  
+  .navbar-brand p {
+    display: inline-block;
+    color: #ccc;
+  }
+  
+  .navbar-brand p:hover {
+    color: #eee;
+  }
+  
+  .navbar-default .navbar-nav>li>a {
+    color: #ccc;
+  }
+  
+  .navbar-default .navbar-nav>li>a:hover {
+    color: #eee;
+  }
+  
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #444;
+  }
+  
+  /*-- Mobile nav --*/
+  .navbar-default .navbar-toggle, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background: none;
+    border: none;
+  } 
+  
+  /*-- Jumbotron settings --*/
+  .jumbotron {
+    position: relative;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .jumbotron .container .profile-img, .jumbotron .container h1, .jumbotron .container h4, .jumbotron .container hr, .jumbotron .container a {
+    position: relative;
+  }
+  
+  .jumbotron .parallax-img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .jumbotron .profile-img {
+    width: 25%;
+    margin: 20px 0;
+    border-radius: 100%;
+    border: 8px solid #eee;
+    -moz-box-shadow:    0px 0px 20px #ccc;
+    -webkit-box-shadow: 0px 0px 20px #ccc;
+    box-shadow:         0px 0px 20px #ccc;
+    filter: hue-rotate(30deg);
+    -webkit-filter: hue-rotate(30deg);
+    -moz-filter: hue-rotate(30deg);
+    -o-filter: hue-rotate(30deg);
+  /*
+    filter: saturate(0);
+    -webkit-filter: saturate(0);
+    -moz-filter: saturate(0);
+    -o-filter: saturate(0);
+  */
+  }
+  
+  .jumbotron hr {
+    width: 50%;
+  }
+  
+  .jumbotron h4 {
+      max-width: 50%;
+      margin: 0 auto 20px;
+  }
+  
+  .project-thumb {
+    width: 100%;
+    max-width: 280px;
+    border: 1px solid #ccc;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  
+  .project-thumb:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+  
+
+  
+  /*-- Custom Modal Settings --*/
+  .modal-content {
+    border-radius: 0;
+  }
+  
+  .modal-dialog {
+    /* width: 80%; */
+    margin: 0 auto; /* Eliminate top margin on bootstrap modal */
+  }
+  
+  .modal-thumb img {
+    width: 66%;
+    padding-top: 20px;
+  }
+  
+  .modal-body {
+    padding: 20px 0;
+    text-align: left;
+    width: 66%;
+    margin: 0 auto;
+  }
+  
+  .close {
+    font-size: 40px;
+    font-weight: 200;
+  }
+  /* END custom modal settings --*/
+  
+  #about p {
+      width: 50%;
+      margin: 0 auto 10px;
+  }
+  
+  #skills img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #contact form {
+    width: 50%;
+    margin: 20px auto;
+  }
+  
+  .alert, .alert-success {
+    width: 33%;
+    margin: 20px auto 0;
+    background: none;
+    color: #fff;
+    border-color: #eee;
+    border-radius: 0;
+  }
+  
+  footer {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #ddd;
+  }
+  
+  /*-----------------
+  * Mobile Settings *
+  -----------------*/
+  /* Make sure parallax image fills jumbotron */
+  @media(max-width: 1200px) {
+      .jumbotron .parallax-img {
+            width: auto;
+            height: 100%;
+    }
+  }
+  
+  /*-- iPhone 6+ --*/
+  @media(max-width: 736px) {
+    /* Expand feature image size */
+      .jumbotron .profile-img {
+          width: 66%;
+      }
+  
+      /* Give overlapping buttons vertical space */
+      .jumbotron .container a {
+          margin-bottom: 10px;
+      }
+  
+      /* Expand various element widths */
+    #about p, #contact form, .modal-body, .modal-thumb img {
+      width: 90%;
+    }
+  
+    
+  }

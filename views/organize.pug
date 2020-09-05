@@ -13,8 +13,8 @@ html(lang="en")
             #navbarSupportedContent.collapse.navbar-collapse
                 ul.navbar-nav.mr-auto
                     li.nav-item.active
-                        a.nav-link(href='/profile/discover')
-                            | Discover
+                        a.nav-link(href='/profile/discuss')
+                            | Discuss
                             span.sr-only (current)
                     li.nav-item.active
                         a.nav-link(href='/profile/resources')
@@ -22,6 +22,8 @@ html(lang="en")
                             span.sr-only
                     li.nav-item
                         a.nav-link(href='/users/logout') Log Out
+                span.nav-item
+                    a(href='/profile/contactUs', style="text-decoration: none;") Contact Us
         block message
         div.container.mx-auto.p-5
             form(action="/profile/organize" method="post").container.mx-auto.p-5.border

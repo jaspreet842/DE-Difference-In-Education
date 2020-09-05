@@ -53,4 +53,14 @@ router.post('/editProfile', (req, res) => {
     res.redirect('/profile/student');
 });
 
+router.get('/practice', (req, res) => res.render('practice.pug'));
+router.get('/test1', (req, res) => res.render('test1.pug'));
+router.get('/test2', (req, res) => res.render('test2.pug'));
+router.get('/test3', (req, res) => res.render('test3.pug'));
+router.get('/test4', (req, res) => res.render('test4.pug'));
+router.get('/test5', (req, res) => res.render('test5.pug'));
+router.get('/test6', (req, res) => res.render('test6.pug'));
+
+router.get('/contactUs', (req, res) => res.render('contactUs.pug'));
+
 module.exports = router;

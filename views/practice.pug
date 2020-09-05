@@ -1,0 +1,140 @@
+doctype html
+html
+    head
+        title Practice
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous')
+        style
+            include ../assets/css/main.css
+        style
+            include ../assets/css/noscript.css
+    body.is-preload
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='#', style="border-bottom: none;") Practice
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='/profile/contest', style="border-bottom: none;")
+                            | Contest
+                            span.sr-only (current)
+                    li.nav-item.active
+                        a.nav-link(href='/profile/discuss', style="border-bottom: none;")
+                            | Discuss
+                            span.sr-only
+                    li.nav-item.active
+                        a.nav-link(href='/profile/resources', style="border-bottom: none;")
+                            | Resources
+                            span.sr-only
+                    li.nav-item
+                        a.nav-link(href='/users/logout', style="border-bottom: none;") Log Out
+                span.nav-item
+                    a(href='/profile/contactUs', style="text-decoration: none;") Contact Us
+        #wrapper
+            section#banner.major
+                .inner
+                    header.major
+                        h1 Practice section
+                    .content
+                        p
+                            | A creative practice tests for beginner of various fields
+                            br
+                            | by a group of Friends.
+                        ul.actions
+                            li
+                                a.button.next.scrolly(href="#one") Lets Hack
+            #main
+                section#one.tiles
+                    article
+                        span.image
+                            img(src="" alt="")
+                        header.major
+                            h3
+                                a.link(href="/profile/test1") C++ Test
+                            p Beginner
+                    article
+                        span.image
+                            img(src="" alt="")
+                        header.major
+                            h3
+                                a.link(href="/profile/test6") C++ Test
+                            p Intermediate
+                    article
+                        span.image
+                            img(src="" alt="")
+                        header.major
+                            h3
+                                a.link(href="/profile/test2") Java Test
+                            p Beginner
+                    article
+                        span.image
+                            img(src="" alt="")
+                        header.major
+                            h3
+                                a.link(href="/profile/test3") Java Test
+                            p Intermediate
+                    article
+                        span.image
+                            img(src="" alt="")
+                        header.major
+                            h3
+                                a.link(href="/profile/test4") Python Test
+                            p Beginner
+                    article
+                        span.image
+                            img(src="" alt="")
+                        header.major
+                            h3
+                                a.link(href="/profile/test5") Python Test
+                            p Intermediate
+                section#two
+                    .inner
+                        header.major
+                            h2 Our Motive
+                        p
+                            | Our motive is to provide a solution for this global pandemic by providing a bit of user
+                            | understandable material for stunds who have just joined college so as to keep up their pace with
+                            | college.It also provides a direct conversations with seniors so as to gain easy help from them.
+                        ul.actions
+                            li
+                                a.button.next(href="#") Get Started
+            footer#footer(style="background: #242943")
+                .inner
+                    ul.icons
+                        li
+                            i.fa.fa-twitter(href="#")
+                                span.label.mx-2 Twitter
+                        li
+                            i.fa.fa-facebook-official(href="#")
+                                span.label.mx-2 Facebook
+                        li
+                            i.fa.fa-instagram(href="#")
+                                span.label.mx-2 Instagram
+                        li
+                            i.alt.fa.fa-github(href="#")
+                                span.label.mx-2 GitHub
+                        li
+                            i.fa.fa-linkedin(href="#")
+                                span.label.mx-2 LinkedIn
+        // Scripts
+        script(src='https://cdn.jsdelivr.net/npm/chart.js@2.8.0')
+        script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+        script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' integrity='sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV' crossorigin='anonymous')
+        script
+            include ../assets/js/jquery.min.js
+        script
+            include ../assets/js/jquery.scrolly.min.js
+        script
+            include ../assets/js/jquery.scrollex.min.js
+        script
+            include ../assets/js/browser.min.js
+        script
+            include ../assets/js/breakpoints.min.js
+        script
+            include ../assets/js/util.js
+        script
+            include ../assets/js/main.js

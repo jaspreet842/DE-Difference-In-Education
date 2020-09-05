@@ -23,8 +23,28 @@ html(lang="en")
                         a.nav-link(href='/profile/resources')
                             | Resources
                             span.sr-only
+                    li.nav-item.active
+                        a.nav-link(href='/profile/practice')
+                            | Practice
+                            span.sr-only
                     li.nav-item
                         a.nav-link(href='/users/logout') Log Out
+                span.btn.btn-primary.nav-item(type="button" data-toggle="modal" data-target="#exampleModal")
+                    | Ask a Question
+                #exampleModal.modal.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                    .modal-dialog
+                        .modal-content
+                            .modal-header
+                                h5#exampleModalLabel.modal-title Ask anything you want
+                                button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                    span(aria-hidden="true") ×
+                            .modal-body
+                                textarea(name="paragraph_text" cols="50" rows="10")
+                            .modal-footer
+                                button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
+                                button.btn.btn-primary(type="button") Ask
+                span.nav-item
+                    a(href='/profile/contactUs', style="text-decoration: none;") Contact Us
         .container.mt-5
             .row
                 // This is important topics section

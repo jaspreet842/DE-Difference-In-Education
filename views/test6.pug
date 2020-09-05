@@ -1,0 +1,53 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        style
+            include ../assets/css/sub.css
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous')
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='#') Test1
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='/profile/contest')
+                            | Contest
+                            span.sr-only (current)
+                    li.nav-item.active
+                        a.nav-link(href='/profile/discuss')
+                            | Discuss
+                            span.sr-only
+                    li.nav-item.active
+                        a.nav-link(href='/profile/resources')
+                            | Resources
+                            span.sr-only
+                    li.nav-item.active
+                        a.nav-link(href='/profile/practice')
+                            | Practice
+                            span.sr-only
+                    li.nav-item
+                        a.nav-link(href='/users/logout') Log Out
+                span.nav-item
+                    a(href='/profile/contactUs', style="text-decoration: none;") Contact Us
+        .jumbotron
+            .container
+                img.parallax-img(src="http://jimkulakowski.com/web-design/img/parallax-backgrounds/space.jpg" alt="Image of mac laptop on a desk")
+                img.profile-img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png" alt="Anything")
+                h1(style="color:white") C++ Intermediate Test
+                hr.style-seven
+        .container-fluid
+            h2#test_status(style="text-align: center;")
+            #test(style="text-align: center; border: #000 1px solid; padding: 10px 40px 40px 40px;")
+            br
+            br
+        script(src="https://code.jquery.com/jquery-3.5.1.min.js")
+        script(src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js")
+        script
+            include ../assets/js/sub.js
+        script
+            include ../js/test1.js

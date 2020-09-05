@@ -1,0 +1,51 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Contest
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous')
+        style
+            include ../css/contest.css
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='#') Contests
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='/profile/discover')
+                            | Discover
+                            span.sr-only (current)
+                    li.nav-item.active
+                        a.nav-link(href='/profile/resources')
+                            | Resources
+                            span.sr-only
+                    li.nav-item.active
+                        a.nav-link(href='/profile/practice')
+                            | Practice
+                            span.sr-only
+                    li.nav-item
+                        a.nav-link(href='/users/logout') Log Out
+        .container.mx-4
+            a.btn.btn-outline-primary.my-4.mr-2(href='#live')
+                | LIVE
+                span.badge.badge-primary#liveCount 9
+                span.sr-only unread messages
+            a.btn.btn-outline-danger.my-4(href='#upcoming')
+                | UPCOMING
+                span.badge.badge-danger#upcomingCount 4
+                span.sr-only unread messages
+        // live
+        #live.container.my-2.mb-4
+            .row.row1
+        // upcoming
+        #upcoming.container.my-4
+            .row.row2
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' integrity='sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV' crossorigin='anonymous')
+    script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+    script
+        include ../js/contest.js

@@ -1,0 +1,11 @@
+html{
+    scroll-behavior: smooth;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    margin-right: 20px;
+}

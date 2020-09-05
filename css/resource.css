@@ -1,0 +1,29 @@
+.b{
+    border: 1px solid black;
+}
+.font{
+   font-size: 25px;
+}
+.pad{
+    padding: 9px;
+    margin: 0px 6px;
+}
+.mar{
+    margin: 7px 0px;
+}
+.div{
+    margin-right: 170px;
+}
+.btn{
+    border-radius: 8px;
+}
+.w{
+    width: 400px;
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.rmvFilter{
+    margin-left: 1rem;
+}

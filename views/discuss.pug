@@ -1,0 +1,272 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
+        style
+            include ../css/discuss.css
+        title ASK PAGE
+    body
+        // This is navbar
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='#') Discuss
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='/profile/contest')
+                            | Contest
+                            span.sr-only (current)
+                    li.nav-item.active
+                        a.nav-link(href='/profile/resources')
+                            | Resources
+                            span.sr-only
+                    li.nav-item
+                        a.nav-link(href='/users/logout') Log Out
+        .container.mt-5
+            .row
+                // This is important topics section
+                .col-sm-2
+                    h5 Important topics
+                    li
+                        a(href="https://www.livescience.com/50776-thermodynamics.html") Thermodynamics
+                    li
+                        a(href="#") Graph
+                    li
+                        a(href="#") Stacks
+                    li
+                        a(href="#") Equilbrium
+                    li
+                        a(href="#") Surface Chemistry
+                    li
+                        a(href="#") OOPs
+                    li
+                        a(href="#") Mathematical Reasoning
+                    li
+                        a(href="#") Solution
+                    li
+                        a(href="#") Modern Physics
+                    li
+                        a(href="#") Electrostatics
+                    li
+                        a(href="#") Calculus
+                    li
+                        a(href="#") Linkedlist
+                    li
+                        a(href="#")  Algorithm
+                    li
+                        a(href="#")  Solid States
+                    li
+                        a(href="#") Binomial Theorem
+                    li
+                        a(href="#") Chemical Bonding
+                    li
+                        a(href="#") jQuery
+                    li
+                        a(href="#")  Kinematics
+                    li
+                        a(href="#")  JAVA
+                    li
+                        a(href="#")  HTML
+                    li
+                        a(href="#")  Algorithm
+                    li
+                        a(href="#")  Data Structure
+                .vl
+                .container1.col-sm-5
+                    div
+                        button#discover.btn.btn-outline-danger Discover
+                        button#answer.btn.btn-outline-info Answer
+                        // This is discover section
+                        #discover1.container1
+                            div
+                                strong
+                                    a(href="#") Thermodynamics
+                                    | ,
+                                    a(href="#") Equilbrium
+                            div
+                                | Explain why increasing the temperature of a gas increases its entropy. What effect does this have on the internal energy of the gas?
+                            div
+                                a#answers(href="#") 7 Answers
+                            div
+                                strong
+                                    a(href="#") Stacks
+                                    | ,
+                                    a(href="#") Algorithm
+                                    | ,
+                                    a(href="#") geeksforgeeks
+                            div How to implement two stack in an array?
+                            div
+                                a#answers(href="#") 24 Answers
+                            div
+                                strong
+                                    a(href="#") Linkedlist
+                                    | ,
+                                    a(href="#") StackOverflow
+                            div Explain whether it is possible to use binary search for linked lists?
+                            div
+                                a#answers(href="#") 21 Answers
+                            div
+                                strong
+                                    a(href="#") Permutations and Combination
+                            div
+                                | The numbers of words that can be formed using the words PATLIPUTRA without changing the relative position of vomel and constant is 400n.Than find the value of n?
+                            div
+                                a#answers(href="#") 3 Answers
+                        // This is answer section
+                        #answer1
+                            div
+                                strong What are different data structures.Explain briefly about them.
+                            textarea(name="paragraph_text" cols="50" rows="5" placeholder="Write your answer here")
+                            div
+                                strong What are different types of chemical reaction?Give examples.
+                            textarea(name="paragraph_text" cols="50" rows="5" placeholder="Write your answer here")
+                            div
+                                strong Explain the different types of topological system.
+                            textarea(name="paragraph_text" cols="50" rows="5" placeholder="Write your answer here")
+                .vl
+                // This is trending question section
+                .col-sm-3
+                    h5 Trending questions
+                    .questions_container
+                        .questions
+                            p How to learn CSS in 3 days?
+                            // Button trigger modal
+                            button.btn.btn-outline-danger(type="button" data-toggle="modal" data-target="#exampleModal1")
+                                | See Answer
+                            // Modal
+                            #exampleModal1.modal.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                                .modal-dialog
+                                    .modal-content
+                                        .modal-header
+                                            h5#exampleModalLabel1.modal-title Answer
+                                            button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                                span(aria-hidden="true") ×
+                                        .modal-body
+                                            textarea(name="paragraph_text" cols="50" rows="10")
+                                        .modal-footer
+                                            button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
+                                            button.btn.btn-primary(type="button") Save Changes
+                            button.btn vote
+                        .questions
+                            p How to learn CSS in 3 days?
+                            // Button trigger modal
+                            button.btn.btn-outline-danger(type="button" data-toggle="modal" data-target="#exampleModal1")
+                                | See Answer
+                            // Modal
+                            #exampleModal1.modal.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                                .modal-dialog
+                                    .modal-content
+                                        .modal-header
+                                            h5#exampleModalLabel1.modal-title Answer
+                                            button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                                span(aria-hidden="true") ×
+                                        .modal-body
+                                            textarea(name="paragraph_text" cols="50" rows="10")
+                                        .modal-footer
+                                            button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
+                                            button.btn.btn-primary(type="button") Save Changes
+                            button.btn vote
+                        .questions
+                            p How to learn CSS in 3 days?
+                            // Button trigger modal
+                            button.btn.btn-outline-danger(type="button" data-toggle="modal" data-target="#exampleModal1")
+                                | See Answer
+                            // Modal
+                            #exampleModal1.modal.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                                .modal-dialog
+                                    .modal-content
+                                        .modal-header
+                                            h5#exampleModalLabel1.modal-title Answer
+                                            button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                                span(aria-hidden="true") ×
+                                        .modal-body
+                                            textarea(name="paragraph_text" cols="50" rows="10")
+                                        .modal-footer
+                                            button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
+                                            button.btn.btn-primary(type="button") Save Changes
+                            button.btn vote
+                        .questions
+                            p How to learn CSS in 3 days?
+                            // Button trigger modal
+                            button.btn.btn-outline-danger(type="button" data-toggle="modal" data-target="#exampleModal1")
+                                | See Answer
+                            // Modal
+                            #exampleModal1.modal.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                                .modal-dialog
+                                    .modal-content
+                                        .modal-header
+                                            h5#exampleModalLabel1.modal-title Answer
+                                            button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                                span(aria-hidden="true") ×
+                                        .modal-body
+                                            textarea(name="paragraph_text" cols="50" rows="10")
+                                        .modal-footer
+                                            button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
+                                            button.btn.btn-primary(type="button") Save Changes
+                            button.btn vote
+                        .questions
+                            p How to learn CSS in 3 days?
+                            // Button trigger modal
+                            button.btn.btn-outline-danger(type="button" data-toggle="modal" data-target="#exampleModal1")
+                                | See Answer
+                            // Modal
+                            #exampleModal1.modal.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                                .modal-dialog
+                                    .modal-content
+                                        .modal-header
+                                            h5#exampleModalLabel1.modal-title Answer
+                                            button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                                span(aria-hidden="true") ×
+                                        .modal-body
+                                            textarea(name="paragraph_text" cols="50" rows="10")
+                                        .modal-footer
+                                            button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
+                                            button.btn.btn-primary(type="button") Save Changes
+                            button.btn vote
+                        .questions
+                            p How to learn CSS in 3 days?
+                            // Button trigger modal
+                            button.btn.btn-outline-danger(type="button" data-toggle="modal" data-target="#exampleModal1")
+                                | See Answer
+                            // Modal
+                            #exampleModal1.modal.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                                .modal-dialog
+                                    .modal-content
+                                        .modal-header
+                                            h5#exampleModalLabel1.modal-title Answer
+                                            button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                                span(aria-hidden="true") ×
+                                        .modal-body
+                                            textarea(name="paragraph_text" cols="50" rows="10")
+                                        .modal-footer
+                                            button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
+                                            button.btn.btn-primary(type="button") Save Changes
+                            button.btn vote
+                        .questions
+                            p How to learn CSS in 3 days?
+                            // Button trigger modal
+                            button.btn.btn-outline-danger(type="button" data-toggle="modal" data-target="#exampleModal1")
+                                | See Answer
+                            // Modal
+                            #exampleModal1.modal.fade(tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                                .modal-dialog
+                                    .modal-content
+                                        .modal-header
+                                            h5#exampleModalLabel1.modal-title Answer
+                                            button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                                span(aria-hidden="true") ×
+                                        .modal-body
+                                            textarea(name="paragraph_text" cols="50" rows="10")
+                                        .modal-footer
+                                            button.btn.btn-secondary(type="button" data-dismiss="modal") Cancel
+                                            button.btn.btn-primary(type="button") Save Changes
+                            button.btn vote
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous")
+    script(src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous")
+    script
+        include ../js/discuss.js

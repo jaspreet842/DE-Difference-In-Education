@@ -22,7 +22,12 @@ router.get('/teacher', (req, res) => {
     res.render('teacherProfile.pug', params);
 });
 
+router.get('/discuss', (req, res) => res.render('discuss.pug'));
+
 router.get('/contest', (req, res) => res.render('contest.pug'));
+
+router.get('/resources', (req, res) => res.render('resources.pug'));
+
 router.get('/organize', (req, res) => res.render('organize.pug'));
 router.post('/organize', (req, res) => {
     const { organizer, name, type, data, desc } = req.body;

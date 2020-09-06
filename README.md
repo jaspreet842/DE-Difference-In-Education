@@ -1,6 +1,6 @@
 # DE-Difference-In-Education
 Making a platform that can make a difference in the field of online education.
-Name of the project:  DE -(Diffrence in Education)
+Name of the project:  DE -(Difference in Education)
 
 Title: Caption/Description - A platform that can help students in learning ,resolving the doubts,practicing and analyzing themselves. 
    	On which test can be organize.
@@ -8,7 +8,7 @@ Title: Caption/Description - A platform that can help students in learning ,reso
 Technologies/Installations: Html/Html5 , CSS/CSS3 , Mongodb ,Javascript , Javascript frameworks(Express.js , Node.js ) ,Pug ,Javascript libraries(Mongoose,passport,bycryptjs)
 
 Usage :There are seperate platform to learn ,practice, analyze ourselves and also there are platform for conducting online tests but there is no single platform where
-both the work can be done. Also want to create a platform that can guide students in their life earlier so that they can set their goal very early which is not the case with many students.
+both the work can be done. Also, We want to create a platform that can guide students in their earlier academic life so that they can set their goal very early which is not the case with many students.
 Also, we have further thought to improvise as we move ahead with this project.
 
 Support: We have provided chatbot,contact-form and address. So. If any one come up with suggestion it will be a great gesture 
